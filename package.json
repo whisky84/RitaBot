@@ -1,14 +1,14 @@
 {
   "name": "ritabot",
-  "version": "1.2.0-3",
+  "version": "1.2.2-3",
   "engines": {
-    "node": "12.10.0"
+    "node": "14.0.0"
   },
   "description": "Real-Time Interchangeable Translating Assistant bot built using discord.js and Google Translate API.",
   "main": "src/bot.js",
   "license": "MIT",
   "scripts": {
-    "start": "node build/bot",
+    "start": "node src/bot.js",
     "build": "gulp build",
     "coveralls": "gulp coveralls",
     "dev": "gulp watch",
@@ -17,48 +17,52 @@
   },
   "author": "Group Project",
   "contributors": [
-    "RitaBot <blank@email.com> (https://github.com/ZyC0R3/RitaBot)"
+    {
+      "name": "RITA <blank@email.com>",
+      "url": "https://github.com/RitaBot-Project/RitaBot"
+    }
   ],
   "keywords": [
     "discord",
     "discordjs",
     "bot",
     "translate",
-    "translator"
+    "translator",
+    "free translator",
+    "discordtranslator"
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ZyC0R3/RitaBot.git"
+    "url": "https://github.com/RitaBot-Project/RitaBot.git"
   },
-  "funding": "https://ritabot.org",
-  "homepage": "https://ritabot.org",
-  "bugs": {
-    "url": "https://github.com/ZyC0R3/RitaBot/issues"
-  },
+  "funding": "https://opencollective.com/ritabot-project",
+  "homepage": "https://ritabot.gg/",
+  "bugs": "https://github.com/RitaBot-Project/RitaBot/issues",
   "dependencies": {
     "common-tags": "^1.8.0",
-    "discord.js": "^11.6.3",
+    "discord.js": "^12.5.3",
     "dotenv": "^8.2.0",
-    "eslint": "^6.8.0",
-    "google-translate-api": "github:ZyC0R3/google-translate-api",
-    "iso-639-1": "^2.1.1",
-    "pg": "^7.18.2",
+    "rita-google-translate-api": "^3.0.11",
+    "iso-639-1": "^2.1.9",
+    "lodash": "^4.17.21",
+    "make-dir": "^3.1.0",
+    "path": "^0.12.7",
+    "pg": "^8.6.0",
     "pg-hstore": "^2.3.3",
-    "seconds-converter": "github:AlooAkbar/seconds-converter",
-    "sequelize": "^5.21.5",
-    "sqlite3": "^4.1.1",
-    "webhook-discord": "^3.6.0"
+    "rita-seconds-converter": "^1.3.0",
+    "sequelize": "^6.6.2",
+    "sqlite3": "^5.0.2",
+    "webhook-discord": "^3.7.7"
   },
   "devDependencies": {
-    "@kollavarsham/gulp-coveralls": "^0.2.12",
+    "@kollavarsham/gulp-coveralls": "^0.3.4",
+    "babel-eslint": "^10.1.0",
     "braces": "^3.0.2",
+    "eslint": "^7.24.0",
     "gulp": "^4.0.2",
     "gulp-eslint": "^6.0.0",
     "gulp-line-ending-corrector": "^1.0.3",
-    "gulp-uglify-es": "^1.0.4",
-    "gulp-watch": "github:ZyC0R3/gulp-watch"
-  },
-  "directories": {
-    "doc": "docs"
+    "gulp-uglify-es": "^2.0.0",
+    "rita-gulp-watch": "^5.1.4"
   }
 }
